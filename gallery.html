@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery &mdash; Explore India</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Explore India!</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#places">Places</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="gallery-hero">
+    <h2>A Journey Through India</h2>
+    <p>Snapshots of heritage, backwaters and golden shores.</p>
+</section>
+
+<main class="gallery">
+
+    <figure class="gallery-item" data-caption="Taj Mahal &mdash; Agra, Uttar Pradesh">
+        <img src="./images/tajmahal.jpg" alt="The Taj Mahal at Agra">
+        <figcaption>
+            <span class="title">Taj Mahal</span>
+            <span class="place">Agra, Uttar Pradesh</span>
+        </figcaption>
+    </figure>
+
+    <figure class="gallery-item" data-caption="Kerala Backwaters &mdash; God's Own Country">
+        <img src="./images/kerala.jpg" alt="Houseboat on the Kerala backwaters">
+        <figcaption>
+            <span class="title">Kerala Backwaters</span>
+            <span class="place">God's Own Country</span>
+        </figcaption>
+    </figure>
+
+    <figure class="gallery-item" data-caption="Goa Beaches &mdash; Sun, Sand and Sea">
+        <img src="./images/goa.jpeg" alt="Palm-lined beach in Goa">
+        <figcaption>
+            <span class="title">Goa Beaches</span>
+            <span class="place">Sun, Sand and Sea</span>
+        </figcaption>
+    </figure>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Explore India</p>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-nav prev" aria-label="Previous">&#8249;</button>
+    <img class="lightbox-img" src="" alt="">
+    <p class="lightbox-caption"></p>
+    <button class="lightbox-nav next" aria-label="Next">&#8250;</button>
+</div>
+
+<script src="./scripts/gallery.js"></script>
+
+</body>
+</html>
