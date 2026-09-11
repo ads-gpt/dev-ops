@@ -37,3 +37,8 @@ and merge via PR) rather than enforced by GitHub.
 ## Team
 
 - Adarsh: project lead
+- Amogh: footer contributor
+
+## Footer
+
+Built collaboratively with GitHub Flow.
