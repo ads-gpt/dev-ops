@@ -1,5 +1,3 @@
-import React from "react";
-
 const BookTable = ({ books, onEdit, onDelete }) => {
 
     return (

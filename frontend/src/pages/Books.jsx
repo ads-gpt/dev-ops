@@ -44,7 +44,24 @@ const Books = () => {
 
     useEffect(() => {
 
-        loadBooks();
+        let isActive = true;
+
+        getBooks()
+            .then((data) => {
+                if (isActive) {
+                    setError("");
+                    setBooks(data);
+                }
+            })
+            .catch((requestError) => {
+                if (isActive) {
+                    setError(requestError.message);
+                }
+            });
+
+        return () => {
+            isActive = false;
+        };
 
     }, []);
 
